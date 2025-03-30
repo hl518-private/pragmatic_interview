@@ -270,7 +270,7 @@ class TaskController(utils):
         columns_to_keep = non_numeric_data.tolist() + target_variables
         df_RFR = df_RFR[columns_to_keep]
         df_RFR = pd.get_dummies(df_RFR, columns=non_numeric_data, drop_first=True)  # One-hot encode non-numeric variables
-        xlabel = "Locations"
+        xlabel = "Importance Value"
         X = df_RFR.drop(columns=target_variables)  # Features (excluding all target variables)
         for target in target_variables:
             y = df_RFR[target]
