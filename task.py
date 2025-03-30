@@ -243,6 +243,7 @@ class TaskController(utils):
             sorted_selected_columns = sorted_selected_columns.drop(index=target_variables)
             if not got_data_for_anomalie_detection:
                 self.correlation_matrix_for_anomalie_detection = sorted_selected_columns.copy()
+                got_data_for_anomalie_detection = True
             print(f"##################################  Sorted correlations for selected column: {target}")
             top_10 = sorted_selected_columns.head(10)
             print("Top 10\n", top_10, "\n")
