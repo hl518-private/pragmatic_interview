@@ -53,7 +53,7 @@ It includes data preparation, correlation analysis, regression modeling, and ano
 - **OECD Country Statistics**: Economic, demographic, and environmental indicators.
 
 ## Usage
-1. Place the required datasets (`data.csv` and `OECD,DF_FACTBOOK2015_PUB,+all.csv`) in the same directory as the script.
+1. Place the required datasets (`data.csv` and `OECD,DF_FACTBOOK2015_PUB,+all.csv`) in the same directory as the script. You can either directly get these from the data source or unzip the uploaded zip file.
 2. Run the script:
    ```bash
    python task.py
